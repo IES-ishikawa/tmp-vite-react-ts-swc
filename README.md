@@ -12,21 +12,35 @@
 
 ## 使用方法
 
-1.このリポジトリを Visual Studio Code(以下 VSCode)で開きます。  
-2.
+1.Docker Desktop を起動します。  
+2.このリポジトリを Visual Studio Code(以下 VSCode)で開きます。  
+3.画面右下の「コンテナーで再度開く」を選択します。(Dev Container 拡張機能がないと出てきません)  
+![image1](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image1.png)
 
-```js
-export default {
-	// other rules...
-	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-		project: ['./tsconfig.json', './tsconfig.node.json'],
-		tsconfigRootDir: __dirname
-	}
-};
-```
+または画面左下のリモートウィンドウを開き「コンテナーで再度開く」を選択します。  
+![image2](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image2.png)  
+![image3](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image3.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4.右下にスナックバーが表示され、Docker コンテナの構築が始まりますのでしばらく待ちます。  
+![image4](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image4.png)  
+![image5](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image5.png)
+
+5.ターミナルに下図のような表示がされればコンテナの構築は完了です。  
+![image6](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image6.png)
+
+6.「F5」キーを押すとポート 5173(Vite のデフォルト)でデバッグサーバーが立ち、Chrome が自動的に立ち上がってデバッグ出来ます。  
+![image7](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image7.png)
+
+「タスク'vite start'を追跡できません。問題マッチャーが定義されていることを確認してください。」と表示された場合には  
+「このタスクの選択内容を保存する」にチェックを入れて、このままデバッグを選択してください。  
+(問題マッチャーは定義してあり、正常に動作していますがなぜか表示されます。)  
+![image8](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image8.png)
+
+7.開発コンテナー名を変える場合は[devcontainer.json](.devcontainer/devcontainer.json) 2 行目の"name"の値を変えてください。  
+モジュール名を変更する場合には[package.json](package.json)2 行目の"name"の値を変えてください。(これは必ず行って下さい。)
+
+8.Let's Hack!
+
+## 注意点
+
+- [このリポジトリ](https://github.com/IES-ishikawa/vite-react-ts-swc-template.git)にはプッシュしないでください
