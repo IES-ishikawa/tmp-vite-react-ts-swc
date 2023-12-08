@@ -4,7 +4,8 @@
 
 ## 前提
 
-以下がローカル環境にインストールされていること
+以下がローカル環境にインストールされていること。  
+拡張機能はインストールされていない場合、Visual Studio Code で開いたタイミングでインストールするか聞かれるので、インストールしてください。
 
 - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code)
   - [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)拡張機能(または[ExtensionPacks](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack))
@@ -13,7 +14,7 @@
 ## 使用方法
 
 1.Docker Desktop を起動します。  
-2.このリポジトリを Visual Studio Code(以下 VSCode)で開きます。  
+2.このリポジトリを Visual Studio Code で開きます。  
 3.画面右下の「コンテナーで再度開く」を選択します。(Dev Container 拡張機能がないと出てきません)  
 ![image1](https://github.com/IES-ishikawa/assets/blob/main/vite-react-ts-swc-template/image1.png)
 
