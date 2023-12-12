@@ -62,9 +62,10 @@
 				"dsznajder.es7-react-js-snippets",
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint",
-				"krysenlo.vite-plugin-eslint-problemmatcher",
 				"PKief.material-icon-theme",
-				"MS-CEINTL.vscode-language-pack-ja"
+				"MS-CEINTL.vscode-language-pack-ja",
+				"formulahendry.auto-rename-tag",
+				"formulahendry.auto-close-tag"
 			]
 		}
 	},
