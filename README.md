@@ -32,11 +32,6 @@
 6.「F5」キーを押すとポート 5173(Vite のデフォルト)でデバッグサーバーが立ち、Chrome が自動的に立ち上がってデバッグ出来ます。  
 ![image7](https://github.com/IES-ishikawa/assets/blob/main/tmp-vite-react-ts-swc/image7.png)
 
-「タスク'vite start'を追跡できません。問題マッチャーが定義されていることを確認してください。」と表示された場合には  
-「このタスクの選択内容を保存する」にチェックを入れて、このままデバッグを選択してください。  
-(問題マッチャーは定義してあり、正常に動作していますがなぜか表示されます。)  
-![image8](https://github.com/IES-ishikawa/assets/blob/main/tmp-vite-react-ts-swc/image8.png)
-
 7.開発コンテナー名を変える場合は[devcontainer.json](.devcontainer/devcontainer.json) 2 行目の"name"の値を変えてください。  
 モジュール名を変更する場合には[package.json](package.json)2 行目の"name"の値を変えてください。(これは必ず行って下さい。)
 
